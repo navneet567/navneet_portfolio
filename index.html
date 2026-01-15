@@ -6,25 +6,38 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdn.boxicons.com/3.0.7/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">portfolio.</a>
+      <a href="#portfolio" class="logo">portfolio.</a>
+      <div class="menu-toggle" id="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
       <nav class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#" style="--i: 2">About Us</a>
-        <a href="#" style="--i: 3">Skill</a>
-        <a href="#" style="--i: 4">Project</a>
-        <a href="#" style="--i: 5">Contact</a>
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About Us</a>
+        <a href="#services" style="--i: 3">Skill</a>
+        <a href="#Skills" style="--i: 3">Progress</a>
+        <a href="#projects" style="--i: 4">Project</a>
+        <a href="#contact" style="--i: 5">Contact</a>
       </nav>
     </header>
-    <section class="home">
+    <!-- ================ home Section =========== -->
+    <section class="home" id="home">
       <div class="home-content">
         <h3>Hello It's me</h3>
         <h1>Navneet singh</h1>
@@ -43,26 +56,32 @@
         </div>
         <a href="#" class="btn-box">More About me </a>
       </div>
+      <div class="home-img">
+        <img src="photo/section1.png" alt="" />
+      </div>
     </section>
 
+    <!-- ================= About us =============== -->
     <section class="about" id="about">
-      <div class="about-img">
-        <img src="photo/secondpage.png" alt="About Image" />
+      <div class="about-container">
+        <div class="about-img">
+          <img src="photo/section2.png" alt="About Image" />
+        </div>
         <div class="about-text">
-          <h2>About<span> Me</span></h2>
+          <h2>About <span>Me</span></h2>
           <h4>MERN Stack And Java Developer</h4>
           <p>
             I am a dedicated MERN Stack and Java Developer with a strong
             foundation in computer networks and basic CCNA concepts. I enjoy
             building full-stack web applications and understanding how software
-            systems communicate over networks. <br />
-            <br />I have hands-on experience with MongoDB, Express.js, React.js,
-            and Node.js, along with backend development using Java and RESTful
-            APIs. I also possess fundamental knowledge of networking concepts
-            such as IP addressing, subnetting, TCP/IP, DNS, HTTP/HTTPS, and
-            routing basics, which helps me design efficient and scalable
-            applications. <br />
-            <br />
+            systems communicate over networks.
+            <br /><br />
+            I have hands-on experience with MongoDB, Express.js, React.js, and
+            Node.js, along with backend development using Java and RESTful APIs.
+            I also possess fundamental knowledge of networking concepts such as
+            IP addressing, subnetting, TCP/IP, DNS, HTTP/HTTPS, and routing
+            basics, which helps me design efficient and scalable applications.
+            <br /><br />
             I am passionate about learning new technologies, improving my
             problem-solving skills, and building real-world projects that
             combine software development and networking knowledge.
@@ -72,71 +91,286 @@
       </div>
     </section>
 
-<section class="skills-section">
-  <h2 class="section-title">Skills</h2>
+    <!-- ======================= skills Section ====================  -->
+    <section>
+      <div class="services" id="services">
+        <div class="container">
+          <h1 class="sub-title">My <span>Skills</span></h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code skill-icon"></i>
+              <h2>Programming</h2>
+              <p>
+                Writing efficient and maintainable code using Java and
+                JavaScript to build application logic and solve problems.
+              </p>
+              <a href="#" class="read">read more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-laptop-code skill-icon"></i>
+              <h2>Frontend Development</h2>
+              <p>
+                Building responsive and interactive user interfaces using
+                React.js, HTML, and CSS.
+              </p>
+              <a href="#" class="read">read more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-server skill-icon"></i>
+              <h2>Backend Development</h2>
+              <p>
+                Developing server-side logic, APIs, and authentication using
+                Node.js, Express.js, and Java.
+              </p>
+              <a href="#" class="read">read more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-database skill-icon"></i>
+              <h2>Database Management</h2>
+              <p>
+                Managing and storing application data efficiently using MongoDB
+                and MySQL.
+              </p>
+              <a href="#" class="read">read more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-network-wired skill-icon"></i>
+              <h2>Networking Fundamentals</h2>
+              <p>
+                Understanding basic CCNA and networking concepts such as TCP/IP,
+                IP addressing, subnetting, and DNS.
+              </p>
+              <a href="#" class="read">read more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-toolbox skill-icon"></i>
+              <h2>Development Tools</h2>
+              <p>
+                Using Git, GitHub, VS Code, and Postman for version control,
+                development, and API testing.
+              </p>
+              <a href="#" class="read">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="skills-container">
+    <!-- =============== Technical and Professional skills ============== -->
+    <section>
+      <div class="container" id="Skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="Technical-bars">
+          <div class="bar">
+            <i class="fa-solid fa-c" style="color: #463e91"></i>
+            <div class="info">
+              <span>C</span>
+            </div>
+            <div class="progress-line c">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="fa-brands fa-java" style="color: #fac925"></i>
+            <div class="info">
+              <span>Java</span>
+            </div>
+            <div class="progress-line java">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="fa-brands fa-java" style="color: #fac925"></i>
+            <div class="info">
+              <span>Java with DSA</span>
+            </div>
+            <div class="progress-line Java">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="fa-brands fa-html5" style="color: #c95d2e"></i>
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="fa-brands fa-css3-alt" style="color: #5708a2"></i>
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bxl bx-javascript" style="color: #f8dd12"></i>
+            <div class="info">
+              <span>Javascript</span>
+            </div>
+            <div class="progress-line Javascript">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="fa-brands fa-react" style="color: #53d5fd"></i>
+            <div class="info">
+              <span>reactjs</span>
+            </div>
+            <div class="progress-line reactjs">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="fa-brands fa-node" style="color: #58eb5b"></i>
+            <div class="info">
+              <span>Nodejs</span>
+            </div>
+            <div class="progress-line nodejs">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bxl bx-express-js" style="color: #58eb5b"></i>
+            <div class="info">
+              <span>Expressjs</span>
+            </div>
+            <div class="progress-line Expressjs">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bxl bx-mongodb" style="color: #2edb8a"></i>
+            <div class="info">
+              <span>MongoDB</span>
+            </div>
+            <div class="progress-line MongoDB">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="skill-card">
-      <i class="fa-solid fa-code skill-icon"></i>
-      <h3>Programming</h3>
-      <p>
-        Writing efficient and maintainable code using Java and JavaScript
-        to build application logic and solve problems.
-      </p>
+      <div class="container1">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars">
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">Creativity</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+            <div class="text">problem solving</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">65%</div>
+            <div class="text">Communication</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Team Work</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= project section ================= -->
+    <section class="projects" id="projects">
+  <h1 class="heading1">Latest <span>Projects</span></h1>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="images/project1.png" alt="Project 1">
+      </div>
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>
+          A responsive personal portfolio built using HTML, CSS and JavaScript
+          showcasing skills, projects and contact details.
+        </p>
+        <div class="project-tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="#" class="project-btn">View Project</a>
+      </div>
     </div>
 
-    <div class="skill-card">
-      <i class="fa-solid fa-laptop-code skill-icon"></i>
-      <h3>Frontend Development</h3>
-      <p>
-        Building responsive and interactive user interfaces using
-        React.js, HTML, and CSS.
-      </p>
+    <div class="project-card">
+      <div class="project-img">
+        <img src="images/project3.png" alt="Project 3">
+      </div>
+      <div class="project-content">
+        <h3>MERN Stack App</h3>
+        <p>
+          Full stack application using MongoDB, Express, React and Node.js with
+          authentication and CRUD operations.
+        </p>
+        <div class="project-tech">
+          <span>MongoDB</span>
+          <span>Express</span>
+          <span>React</span>
+          <span>Node</span>
+        </div>
+        <a href="#" class="project-btn">View Project</a>
+      </div>
     </div>
-
-    <div class="skill-card">
-      <i class="fa-solid fa-server skill-icon"></i>
-      <h3>Backend Development</h3>
-      <p>
-        Developing server-side logic, APIs, and authentication using
-        Node.js, Express.js, and Java.
-      </p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fa-solid fa-database skill-icon"></i>
-      <h3>Database Management</h3>
-      <p>
-        Managing and storing application data efficiently using
-        MongoDB and MySQL.
-      </p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fa-solid fa-network-wired skill-icon"></i>
-      <h3>Networking Fundamentals</h3>
-      <p>
-        Understanding basic CCNA and networking concepts such as
-        TCP/IP, IP addressing, subnetting, and DNS.
-      </p>
-    </div>
-
-    <div class="skill-card">
-      <i class="fa-solid fa-toolbox skill-icon"></i>
-      <h3>Development Tools</h3>
-      <p>
-        Using Git, GitHub, VS Code, and Postman for version control,
-        development, and API testing.
-      </p>
-    </div>
-
   </div>
 </section>
 
+ <!-- ============. contact section. ============= -->
+<section class="contact" id="contact">
+  <h1 class="heading1">Contact <span>Me</span></h1>
 
+  <div class="contact-container">
+    <div class="contact-box"> 
+      <form>
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your email" required>
+        <textarea rows="5" placeholder="Enter your message" required></textarea>
 
+        <button type="submit" class="contact-btn">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
 
+      </form>
+    </div>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> navneetsingh@email.com</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Navneet Singh. All Rights Reserved.
+  </div>
+</section>
 
     <script src="main.js"></script>
   </body>
